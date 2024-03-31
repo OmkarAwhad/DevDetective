@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detective Project</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="container">
+            <div class="top-container">
+                <h2>DevDetective</h2>
+                <button class="darkmode" data-darkLight>
+                    <p data-blacknWhite>DARK</p>
+                    <img src="./images/moon-icon.svg" data-blacknWhiteIcon alt="">
+                </button>
+            </div>
+
+            <div class="input-container" data-searchForm>
+
+                <i class="fa-solid fa-magnifying-glass"></i> 
+                <input type="text" placeholder="Enter a Github username..." data-searchInput>
+                <i class="fa-solid fa-xmark" id="cross" data-cross></i>
+                <button type="submit" data-searchBtn>Search</button>
+
+            </div>
+
+            <div class="main-container">
+                <div class="profile">
+                    <img alt="user" data-userPhoto>
+
+                    <div class="profile-second">
+                        <div class="nameDate">
+                            <h2 data-name></h2>
+                            <a data-userNameUrl><p data-userNameUrlnothing></p></a>
+                            
+                        </div>
+    
+                        <p data-joined></p>
+                    </div>
+
+                </div>
+
+                <!-- <div class="nothing-container"></div> -->
+
+                <div class="second-container">
+
+                    <p data-bio></p>
+
+                    <div class="statsContainer" data-statsContainer>
+
+                        <div class="numbers repos-container">
+                            <p>Repos</p>
+                            <h2 data-repos></h2>
+                        </div>
+
+                        <div class="numbers followers-container">
+                            <p>Followers</p>
+                            <h2 data-followers></h2>
+                        </div>
+
+                        <div class="numbers following-container">
+                            <p>Following</p>
+                            <h2 data-following></h2>
+                        </div>
+
+                    </div>
+
+                    <div class="otherDetails" data-others>
+
+                        <div class="other">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p data-location></p>
+                        </div>
+
+                        <div class="other">
+                            <i class="fa-solid fa-link"></i>
+                            <a data-youtube><p youtube-text></p></a>
+                        </div>
+
+                        <div class="other">
+                            <i class="fa-brands fa-twitter"></i>
+                            <a data-twitter><p twitter-text></p></a>
+                        </div>
+
+                        <div class="other">
+                            <i class="fa-solid fa-building"></i>
+                            <p data-address></p>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- .input-container button{
+    all: unset;
+    margin-left: 20%;
+    cursor: pointer;
+    padding-block:15px;
+    padding-inline: 25px;
+    background-color: var(--btn);
+    border-radius: 0.75rem;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+} -->
